@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="final.xsl" type="text/xsl"?>
+<!DOCTYPE Contacts>
+<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="final.xsd">
+<Contact Group="Personal">
+  <FirstName>Peter</FirstName>
+  <LastName>Twickler</LastName>
+  <Phones>
+    <Phone Type="Home">718-832-0777</Phone>
+    <Phone Type="Work">212-561-8216</Phone>
+    <Phone Type="Cell">917-449-0988</Phone>
+  </Phones>
+  <Address>
+    <Street>400 East 12th Street, #2</Street>
+    <City>Brooklyn</City>
+    <State>NY</State>
+    <Zip>11215</Zip>
+  </Address>
+  <Email>peter.twickler@gmail.com</Email>
+</Contact>
+<Contact Group="Work">
+  <FirstName>John</FirstName>
+  <LastName>Nguyen</LastName>
+  <Phones>
+    <Phone Type="Home">718-122-3333</Phone>
+    <Phone Type="Cell">917-333-4455</Phone>
+  </Phones>
+  <Address>
+    <Street>9 Crocker Street</Street>
+    <City>Somerville</City>
+    <State>MA</State>
+    <Zip>02143</Zip>
+  </Address>
+  <Email>jgnuy@newin.com</Email>
+</Contact>
+<Contact Group="Personal">
+  <FirstName>Sarah</FirstName>
+  <LastName>Moriarty</LastName>
+  <Phones>
+    <Phone Type="Cell">347-351-0777</Phone>
+  </Phones>
+  <Address>
+    <Street>400 East 12th Street, #2</Street>
+    <City>Brooklyn</City>
+    <State>NY</State>
+    <Zip>11215</Zip>
+  </Address>
+  <Email>scmoriarty@excite.com</Email>
+</Contact>
+<Contact Group="Family">
+  <FirstName>Bill</FirstName>
+  <LastName>Anderson</LastName>
+  <Phones>
+    <Phone Type="Work">303-222-1212</Phone>
+  </Phones>
+  <Address>
+    <Street>33 Weetamoe Drives</Street>
+    <City>Warwick</City>
+    <State>RI</State>
+    <Zip>12233</Zip>
+  </Address>
+  <Email>ba@lawyers.org</Email>
+</Contact>
+<Contact Group="Personal">
+  <FirstName>Wayne</FirstName>
+  <LastName>Johans</LastName>
+  <Phones>
+    <Phone Type="Home">818-222-3455</Phone>
+  </Phones>
+  <Address>
+    <Street>344 Gumpy Ave</Street>
+    <City>Gorp</City>
+    <State>LA</State>
+    <Zip>34555</Zip>
+  </Address>
+  <Email>w.gumpy@glummuggle.org</Email>
+</Contact>
+<Contact Group="Work">
+  <FirstName>Sloane</FirstName>
+  <LastName>Flomms</LastName>
+  <Phones>
+    <Phone Type="Home">553-122-4545</Phone>
+    <Phone Type="Cell">347-351-9900</Phone>
+  </Phones>
+  <Address>
+    <Street>4565 Total Boulevard</Street>
+    <City>Vole</City>
+    <State>MN</State>
+    <Zip>90134</Zip>
+  </Address>
+  <Email>s.flomms@gump.com</Email>
+</Contact>
+<Contact Group="Family">
+  <FirstName>Jane</FirstName>
+  <LastName>Anderson</LastName>
+  <Phones>
+    <Phone Type="Home">978-475-8301</Phone>
+  </Phones>
+  <Address>
+    <Street>99 Avenue U, Apt. #2</Street>
+    <City>Brooklyn</City>
+    <State>NY</State>
+    <Zip>34555</Zip>
+  </Address>
+  <Email>w.gumpy@glummuggle.org</Email>
+</Contact>
+</Contacts>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Contacts">
+    <xs:complexType>
+    <xs:sequence>
+    <xs:element name="Contact" minOccurs="1" maxOccurs="unbounded">
+      <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="FirstName" type="xs:token"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="LastName" type="xs:token"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Phones" type="PhonesType"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Address" type="AddressType"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="Email" type="xs:token"/>
+      </xs:sequence><!-- end sequence PersonalInfo -->
+      <xs:attribute name="Group"/>
+    </xs:complexType><!--end complexType Contact -->
+  </xs:element><!-- end element Contact -->
+  </xs:sequence>
+  </xs:complexType>
+ </xs:element><!-- end element Contacts -->
+  <xs:complexType name="PhonesType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Phone" type="PhoneType"/>
+    </xs:sequence>
+  </xs:complexType><!-- end complexType PhonesType -->
+  <xs:complexType name="PhoneType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="Type" type="PhoneLocation"/>
+      </xs:extension><!-- end extension PhoneType -->
+    </xs:simpleContent><!-- end simpleContent PhoneType -->
+  </xs:complexType><!-- end complexType PhoneType -->
+  <xs:simpleType name="PhoneLocation">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Home" />
+      <xs:enumeration value="Work" />
+      <xs:enumeration value="Cell" />
+      <xs:enumeration value="Fax" />
+      <xs:enumeration value="satelite" />
+    </xs:restriction><!-- end restriction PhoneLocation -->
+  </xs:simpleType><!-- end simpleType PhoneLocation -->
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+     <xs:element minOccurs="1" maxOccurs="1" name="Street" type="xs:token" />
+     <xs:element minOccurs="1" maxOccurs="1" name="City" type="xs:token" />
+     <xs:element minOccurs="1" maxOccurs="1" name="State" type="StateType" />
+     <xs:element minOccurs="1" maxOccurs="1" name="Zip" type="ZipType" />
+    </xs:sequence><!-- end complexType AddressType -->
+  </xs:complexType><!-- end complexType AddressType -->
+  <xs:simpleType name="StateType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="([A-Z]{2})" />
+    </xs:restriction><!-- end restriction StateType -->
+  </xs:simpleType><!--end simpleType StateType -->
+  <xs:simpleType name="ZipType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="([0-9]{5})" />
+    </xs:restriction><!-- end restriction ZipType -->
+  </xs:simpleType><!-- end simpleType ZipType -->
+</xs:schema>
