@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="final.xsl" type="text/xsl"?>
 <!DOCTYPE Contacts>
-<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="final.xsd">
+<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contacts.xsd">
 <Contact Group="Personal">
   <FirstName>Peter</FirstName>
   <LastName>Twickler</LastName>
